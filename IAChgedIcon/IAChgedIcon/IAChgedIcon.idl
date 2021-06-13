@@ -1,0 +1,36 @@
+// IAChgedIcon.idl : IDL source for IAChgedIcon
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (IAChgedIcon.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(c96ea428-0152-415e-b1fe-fb2ef4aa0a5d),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IChgedIcon : IDispatch
+{
+};
+[
+	uuid(c814851b-97b1-4a2b-ab5f-2b2fbf423599),
+	version(1.0),
+]
+library IAChgedIconLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(8669f9f0-fc80-48b9-b93b-4513a40521c0)
+	]
+	coclass ChgedIcon
+	{
+		[default] interface IChgedIcon;
+	};
+};
+
+import "shobjidl.idl";

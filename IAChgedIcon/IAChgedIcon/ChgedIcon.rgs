@@ -1,0 +1,41 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {8669f9f0-fc80-48b9-b93b-4513a40521c0} = s 'ChgedIcon class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{c814851b-97b1-4a2b-ab5f-2b2fbf423599}'
+			Version = s '1.0'
+		}
+	}
+}
+
+HKLM
+{
+  NoRemove SOFTWARE
+  {
+    NoRemove Microsoft
+    {
+      NoRemove Windows
+      {
+        NoRemove CurrentVersion
+        {
+          NoRemove Explorer
+          {
+            NoRemove ShellIconOverlayIdentifiers
+            {
+              ForceRemove  ChgedIcon = s '{8669f9f0-fc80-48b9-b93b-4513a40521c0}'
+              {
+              }           
+            }
+          }
+        }
+      }
+    }
+  }
+}

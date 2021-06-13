@@ -1,0 +1,36 @@
+// IACkoutIcon.idl : IDL source for IACkoutIcon
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (IACkoutIcon.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(8ab5cc4c-4950-44d9-91f3-6cde6fcefc5e),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ICkoutIcon : IDispatch
+{
+};
+[
+	uuid(4369b00d-fbfc-460a-b00b-f6235e33d65e),
+	version(1.0),
+]
+library IACkoutIconLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(540fcc02-7ea1-47d8-8f6a-65e28671c3e5)
+	]
+	coclass CkoutIcon
+	{
+		[default] interface ICkoutIcon;
+	};
+};
+
+import "shobjidl.idl";

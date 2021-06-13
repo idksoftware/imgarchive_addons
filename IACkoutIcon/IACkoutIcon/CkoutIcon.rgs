@@ -1,0 +1,41 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {540fcc02-7ea1-47d8-8f6a-65e28671c3e5} = s 'CkoutIcon class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{4369b00d-fbfc-460a-b00b-f6235e33d65e}'
+			Version = s '1.0'
+		}
+	}
+}
+
+HKLM
+{
+  NoRemove SOFTWARE
+  {
+    NoRemove Microsoft
+    {
+      NoRemove Windows
+      {
+        NoRemove CurrentVersion
+        {
+          NoRemove Explorer
+          {
+            NoRemove ShellIconOverlayIdentifiers
+            {
+              ForceRemove CkoutIcon = s '{540fcc02-7ea1-47d8-8f6a-65e28671c3e5}'
+              {
+              }           
+            }
+          }
+        }
+      }
+    }
+  }
+}
