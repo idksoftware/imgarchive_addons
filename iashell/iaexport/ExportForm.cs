@@ -14,8 +14,8 @@ namespace iaexport
             List<FileInfo> fileIist = new List<FileInfo>();
 
             SetectedFiles setectedFiles = new SetectedFiles();
-            setectedFiles.readFiles(fileIist);
-            AddImportItems(fileIist);
+            //setectedFiles.readFiles(fileIist);
+            //AddImportItems(fileIist);
         }
 
         public void AddImportItems(List<FileInfo> fileIist)

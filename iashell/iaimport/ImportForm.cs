@@ -17,8 +17,8 @@ namespace iaimport
 
             List<FileInfo> fileIist = new List<FileInfo>();
         
-            SetectedFiles setectedFiles = new SetectedFiles();
-            setectedFiles.readFiles(fileIist);
+            //SetectedFiles setectedFiles = new SetectedFiles();
+            //etectedFiles.readFiles(fileIist);
             AddImportItems(fileIist);
         }
 

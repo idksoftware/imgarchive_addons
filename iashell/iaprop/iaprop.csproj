@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PropertiesForm.cs">
+    <Compile Include="MainPropertiesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PropertiesForm.Designer.cs">
-      <DependentUpon>PropertiesForm.cs</DependentUpon>
+    <Compile Include="MainPropertiesForm.Designer.cs">
+      <DependentUpon>MainPropertiesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="PropertiesForm.resx">
-      <DependentUpon>PropertiesForm.cs</DependentUpon>
+    <EmbeddedResource Include="MainPropertiesForm.resx">
+      <DependentUpon>MainPropertiesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +78,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iaforms\iaforms.csproj">
+      <Project>{96db84cb-758d-467b-816b-38ae053eb841}</Project>
+      <Name>iaforms</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

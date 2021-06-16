@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iashell", "iashell\iashell.csproj", "{A7BB8E1B-31F4-4121-B7FF-33514D004C79}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iaabout", "iaabout\iaabout.csproj", "{E9A65FAF-5AFE-407C-99D1-54F07CF7B0AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iaimport", "iaimport\iaimport.csproj", "{5F2E3DA1-DEB5-4301-9C94-B1897A7BFD4F}"
@@ -18,6 +16,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iaprop", "iaprop\iaprop.csproj", "{DCCED08A-DBDF-4352-8539-025C500CADFB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{96DB84CB-758D-467B-816B-38AE053EB841} = {96DB84CB-758D-467B-816B-38AE053EB841}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iachkin", "iachkin\iachkin.csproj", "{F9D7E3FF-F543-4AC4-8C4F-54C74C398722}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -42,10 +43,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A7BB8E1B-31F4-4121-B7FF-33514D004C79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7BB8E1B-31F4-4121-B7FF-33514D004C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7BB8E1B-31F4-4121-B7FF-33514D004C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7BB8E1B-31F4-4121-B7FF-33514D004C79}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E9A65FAF-5AFE-407C-99D1-54F07CF7B0AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E9A65FAF-5AFE-407C-99D1-54F07CF7B0AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9A65FAF-5AFE-407C-99D1-54F07CF7B0AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
